@@ -1,0 +1,21 @@
+// Instance Database
+//
+// Structure of Database:
+// ID,Name,LimitTime,IdleTimeOut,EnterMap,EnterX,EnterY,Map2,Map3,...,Map255
+//
+// EnterMap is considered as Map1
+
+1,Torre Bijuu,14400,300,1@tower,50,355,2@tower,6@tower
+2,Sealed Catacomb,7200,300,1@cata,100,224,2@cata
+3,Orc's Memory,3600,300,1@orcs,179,15,2@orcs
+4,Nidhoggur's Nest,14400,300,1@nyd,32,36,2@nyd
+18,Grande Ponte,3600,300,1@ponte,40,63
+19,Exame Chunin,3600,300,1@exame,29,133
+20,Dimensao Gelo,3600,300,ice_dun03,149,18
+21,Dimensao Ceu,3600,300,yuno,157,12
+22,Dimensao Agua,3600,300,iz_dun04,26,27
+23,Dimensao Escuridao,3600,300,gef_dun02,107,132
+24,Dimensao Fogo,3600,300,moro_vol,202,185
+25,Dimensao Luz,3600,300,bif_fild01,161,355
+26,Natal Perdido,3600,300,1@xm_d,129,80
+28,Torneio Chunin,3600,300,exame,101,8

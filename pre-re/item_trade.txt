@@ -1,0 +1,196 @@
+﻿// Item Trade Restrictions Database
+// Defines special trade rules for individual items.
+//
+// Structure of Database:
+// Item ID, TradeMask,Group Level Override
+//
+// Legend for 'TradeMask' field (bitmask):
+// 1   - item can't be dropped
+// 2   - item can't be traded (nor vended)
+// 4   - wedded partner can override restriction 2
+// 8   - item can't be sold to npcs
+// 16  - item can't be placed in the cart
+// 32  - item can't be placed in the storage
+// 64  - item can't be placed in the guild storage
+// 128 - item can't be attached to mail
+// 256 - item can't be auctioned
+//
+// Example:
+// 1161,67,50
+//	Balmung cannot be dropped, traded, or placed in Guild Storage (1+2+64).
+//	Only groups of group-level 50 and up can override this setting.
+
+5103,479,100	// Boné RagNaruto
+
+30000,511,100	// Item
+30001,511,100	// Item
+30002,511,100	// Item
+30003,511,100	// Item
+30004,511,100	// Item
+30005,511,100	// Item
+
+30010,511,100	// Item
+30011,511,100	// Item
+30012,511,100	// Item
+30013,511,100	// Item
+30014,511,100	// Item
+30015,511,100	// Item
+
+30020,511,100	// Item
+30021,511,100	// Item
+30022,511,100	// Item
+30023,511,100	// Item
+30024,511,100	// Item
+30025,511,100	// Item
+
+30030,511,100	// Item
+30031,511,100	// Item
+30032,511,100	// Item
+30033,511,100	// Item
+30034,511,100	// Item
+30035,511,100	// Item
+
+30060,511,100	// Item
+30061,511,100	// Item
+30062,511,100	// Item
+30063,511,100	// Item
+
+30065,511,100	// Item
+30066,511,100	// Item
+30067,511,100	// Item
+30068,511,100	// Item
+30069,511,100	// Item
+30070,511,100	// Item
+30071,511,100	// Item
+30072,511,100	// Item
+
+30081,511,100	// Item
+30082,511,100	// Item
+30083,511,100	// Item
+30084,511,100	// Item
+30085,511,100	// Item
+
+30086,511,100	// Kyuubi
+31056,511,100	// Nibi
+31064,511,100	// Rinnegan
+31108,511,100	// Rinnegan
+
+// Kekkei Genkai's
+
+30101,511,100	// Item
+30102,511,100	// Item
+30103,511,100	// Item
+30104,511,100	// Item
+30105,511,100	// Item
+30106,511,100	// Item
+30107,511,100	// Item
+30108,511,100	// Item
+30109,511,100	// Item
+30110,511,100	// Item
+30111,511,100	// Item
+30112,511,100	// Item
+30113,511,100	// Item
+30114,511,100	// Item
+30115,511,100	// Item
+30116,511,100	// Item
+30117,511,100	// Item
+30118,511,100	// Item
+30119,511,100	// Item
+30120,511,100	// Item
+30121,511,100	// Item
+30122,511,100	// Item
+30123,511,100	// Item
+30124,511,100	// Item
+30125,511,100	// Item
+30126,511,100	// Item
+30127,511,100	// Senjutsu
+30128,511,100	// Uzumaki
+30129,511,100	// Suigetsu
+30130,511,100	// Kenjutsu
+30131,511,100	// Kibaku Nendo
+30132,511,100	// Shouton
+30133,511,100	// Youton
+30134,511,100	// 5 elementos
+1233,511,100	// Arco Kidoumaru
+1236,511,100	// Pistola Kibaku
+1235,511,100	// Arco Kidoumaru S
+1113,511,100	// Pistola Kibaku S
+
+// VIP
+7016,511,100	// Reset
+7017,511,100	// Reset
+7018,511,100	// Reset
+//7019,511,100	// Reset
+7020,511,100	// Reset
+7021,511,100	// Reset
+7022,511,100	// Reset
+7023,511,100	// Reset
+7024,511,100	// Reset
+7025,511,100	// Reset
+7026,511,100	// Reset
+7027,511,100	// Reset
+734,511,100	// CAIXA MISTERIOSA
+7018,511,100	// Sacola de Zeny 10kk
+
+// Pedras de Treinamento
+//--------------------
+6000,511,100	// Item
+6001,511,100	// Item
+6002,511,100	// Item
+6003,511,100	// Item
+6004,511,100	// Item
+6005,511,100	// Item
+6018,511,100	// Item
+
+6006,511,100	// Item
+6007,511,100	// Item
+6008,511,100	// Item
+6009,511,100	// Item
+6010,511,100	// Item
+6011,511,100	// Item
+6019,511,100	// Item
+
+6012,511,100	// Item
+6013,511,100	// Item
+6014,511,100	// Item
+6015,511,100	// Item
+6016,511,100	// Item
+6017,511,100	// Item
+6020,511,100	// Item
+
+//
+//
+718,511,100	// Item
+719,511,100	// Item
+
+//
+735,511,100
+
+1000,511,100
+
+//Monotaria
+2000,9,100
+2001,9,100
+
+//bandana nuke
+31226,511,100
+
+775,511,100	// Item
+
+8000,511,100	// Item
+8001,511,100	// Item
+
+8100,511,100 	// Missao SS
+8101,511,100	// Missao SS
+8102,511,100	// Missao SS
+8103,511,100	// Missao SS
+8104,511,100	// Missao SS
+8105,511,100	// Missao SS
+8106,511,100	// Missao SS
+
+748,511,100	// Planta Konoha
+749,511,100	// Planta Suna
+750,511,100	// Planta Névoa
+751,511,100	// Planta Nuvem
+
+3057,511,100	// Pack Iniciante

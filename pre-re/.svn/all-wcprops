@@ -1,0 +1,299 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/rathena/rathena/!svn/ver/56308/trunk/db/pre-re
+END
+job_noenter_map.txt
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/rathena/rathena/!svn/ver/19494/trunk/db/pre-re/job_noenter_map.txt
+END
+exp_homun.txt
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/rathena/rathena/!svn/ver/11722/trunk/db/pre-re/exp_homun.txt
+END
+item_db.txt
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/rathena/rathena/!svn/ver/56238/trunk/db/pre-re/item_db.txt
+END
+achievement_level_db.yml
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/rathena/rathena/!svn/ver/51641/trunk/db/pre-re/achievement_level_db.yml
+END
+produce_db.txt
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/rathena/rathena/!svn/ver/53170/trunk/db/pre-re/produce_db.txt
+END
+homunculus_db.txt
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/rathena/rathena/!svn/ver/19494/trunk/db/pre-re/homunculus_db.txt
+END
+item_delay.txt
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/rathena/rathena/!svn/ver/42072/trunk/db/pre-re/item_delay.txt
+END
+item_trade.txt
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/rathena/rathena/!svn/ver/53170/trunk/db/pre-re/item_trade.txt
+END
+item_group_db.txt
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/rathena/rathena/!svn/ver/30914/trunk/db/pre-re/item_group_db.txt
+END
+achievement_db.yml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/rathena/rathena/!svn/ver/53170/trunk/db/pre-re/achievement_db.yml
+END
+pet_db.yml
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/rathena/rathena/!svn/ver/44340/trunk/db/pre-re/pet_db.yml
+END
+attr_fix.txt
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/rathena/rathena/!svn/ver/12107/trunk/db/pre-re/attr_fix.txt
+END
+exp_guild.txt
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/rathena/rathena/!svn/ver/11722/trunk/db/pre-re/exp_guild.txt
+END
+mob_skill_db.txt
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/rathena/rathena/!svn/ver/53170/trunk/db/pre-re/mob_skill_db.txt
+END
+item_combo_db.txt
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/rathena/rathena/!svn/ver/30636/trunk/db/pre-re/item_combo_db.txt
+END
+mob_db.txt
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/rathena/rathena/!svn/ver/53170/trunk/db/pre-re/mob_db.txt
+END
+mob_random_db.txt
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/rathena/rathena/!svn/ver/19494/trunk/db/pre-re/mob_random_db.txt
+END
+statpoint.txt
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/rathena/rathena/!svn/ver/9426/trunk/db/pre-re/statpoint.txt
+END
+attendance.yml
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/rathena/rathena/!svn/ver/42824/trunk/db/pre-re/attendance.yml
+END
+item_buyingstore.txt
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/rathena/rathena/!svn/ver/38938/trunk/db/pre-re/item_buyingstore.txt
+END
+item_violetbox.txt
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/rathena/rathena/!svn/ver/12027/trunk/db/pre-re/item_violetbox.txt
+END
+mob_poring.txt
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/rathena/rathena/!svn/ver/12906/trunk/db/pre-re/mob_poring.txt
+END
+item_randomopt_group.txt
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/rathena/rathena/!svn/ver/19506/trunk/db/pre-re/item_randomopt_group.txt
+END
+skill_tree.txt
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/rathena/rathena/!svn/ver/56236/trunk/db/pre-re/skill_tree.txt
+END
+item_noequip.txt
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/rathena/rathena/!svn/ver/19494/trunk/db/pre-re/item_noequip.txt
+END
+mob_race2_db.txt
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/rathena/rathena/!svn/ver/54087/trunk/db/pre-re/mob_race2_db.txt
+END
+refine_db.yml
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/rathena/rathena/!svn/ver/23390/trunk/db/pre-re/refine_db.yml
+END
+job_db1.txt
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/rathena/rathena/!svn/ver/43382/trunk/db/pre-re/job_db1.txt
+END
+item_cash_db.txt
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/rathena/rathena/!svn/ver/19494/trunk/db/pre-re/item_cash_db.txt
+END
+mob_drop.txt
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/rathena/rathena/!svn/ver/19506/trunk/db/pre-re/mob_drop.txt
+END
+guild_skill_tree.yml
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/rathena/rathena/!svn/ver/43307/trunk/db/pre-re/guild_skill_tree.yml
+END
+mob_boss.txt
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/rathena/rathena/!svn/ver/12906/trunk/db/pre-re/mob_boss.txt
+END
+job_basehpsp_db.txt
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/rathena/rathena/!svn/ver/14180/trunk/db/pre-re/job_basehpsp_db.txt
+END
+skill_db.yml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/rathena/rathena/!svn/ver/56308/trunk/db/pre-re/skill_db.yml
+END
+quest_db.txt
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/rathena/rathena/!svn/ver/53170/trunk/db/pre-re/quest_db.txt
+END
+item_cardalbum.txt
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/rathena/rathena/!svn/ver/12027/trunk/db/pre-re/item_cardalbum.txt
+END
+item_misc.txt
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/rathena/rathena/!svn/ver/45298/trunk/db/pre-re/item_misc.txt
+END
+instance_db.txt
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/rathena/rathena/!svn/ver/19494/trunk/db/pre-re/instance_db.txt
+END
+item_bluebox.txt
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/rathena/rathena/!svn/ver/12027/trunk/db/pre-re/item_bluebox.txt
+END
+item_giftbox.txt
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/rathena/rathena/!svn/ver/12027/trunk/db/pre-re/item_giftbox.txt
+END
+item_stack.txt
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/rathena/rathena/!svn/ver/19863/trunk/db/pre-re/item_stack.txt
+END
+job_exp.txt
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/rathena/rathena/!svn/ver/31957/trunk/db/pre-re/job_exp.txt
+END
+item_randomopt_db.txt
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/rathena/rathena/!svn/ver/19494/trunk/db/pre-re/item_randomopt_db.txt
+END
+item_flag.txt
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/rathena/rathena/!svn/ver/40194/trunk/db/pre-re/item_flag.txt
+END
+map_cache.dat
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/rathena/rathena/!svn/ver/31905/trunk/db/pre-re/map_cache.dat
+END
+mob_branch.txt
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/rathena/rathena/!svn/ver/53170/trunk/db/pre-re/mob_branch.txt
+END
+skill_nocast_db.txt
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/rathena/rathena/!svn/ver/19494/trunk/db/pre-re/skill_nocast_db.txt
+END
+abra_db.yml
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/rathena/rathena/!svn/ver/56026/trunk/db/pre-re/abra_db.yml
+END
+job_param_db.txt
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/rathena/rathena/!svn/ver/11722/trunk/db/pre-re/job_param_db.txt
+END

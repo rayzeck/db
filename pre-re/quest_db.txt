@@ -1,0 +1,634 @@
+﻿// Quest Database
+//
+// Structure of Database:
+// Quest ID,Time Limit,Target1,Val1,Target2,Val2,Target3,Val3,MobID1,NameID1,Rate1,MobID2,NameID2,Rate2,MobID3,NameID3,Rate3,Quest Title
+//
+// The MobID*, NameID*, and Rate* reflect special values for quests that can drop an item at given rate from given mob.
+// If no MobID* is given, then any mob has a chance to drop the given ItemID*.
+
+
+
+1,0,1257,100,1258,100,0,0,0,0,0,0,0,0,0,0,0,"Dimensão do Gelo"
+2,0,1264,100,1265,100,0,0,0,0,0,0,0,0,0,0,0,"Dimensão do Fogo"
+3,0,1268,100,1269,100,0,0,0,0,0,0,0,0,0,0,0,"Dimensão da Luz"
+4,0,1273,100,1274,100,0,0,0,0,0,0,0,0,0,0,0,"Dimensão do Ceu"
+5,0,1281,100,1282,100,0,0,0,0,0,0,0,0,0,0,0,"Dimensão da Escuridao"
+6,0,1285,100,1286,100,0,0,0,0,0,0,0,0,0,0,0,"Dimensão do Agua"
+
+1000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Primeiros Passos"
+
+60200,604800,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Endless Tower Effect"
+60201,14400,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Endless Tower Time Limit"
+
+// ------------------ Konohagakure --------------------------
+
+1001,0,1591,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Taijutsu Basico: Kage Buyo"
+1002,0,1010,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Taijutsu Basico: Jyuuken Ryuu"
+1003,0,1167,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Taijutsu Basico: Rasteira"
+1004,0,1007,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Taijutsu Basico: Shikomishidan"
+1005,0,1010,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Taijutsu Basico: Tokken"
+
+1011,0,1167,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Velocidade Basico: Concentrar chakra nos pés"
+1012,0,1010,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Velocidade Basico: Perícia em Esquiva"
+1013,0,1591,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Velocidade Basico: Rapidez mão"
+1014,0,1007,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Velocidade Basico: Recuar"
+
+1021,0,1167,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Medicina Basico: Chiyute no Jutsu"
+1022,0,1010,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Medicina Basico: Relaxar"
+1023,0,1591,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Medicina Basico: Inyu Shometsu"
+1024,0,1007,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Medicina Basico: Remover Armadilha"
+1025,0,1167,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Medicina Basico: Souzou Saisei"
+
+1031,0,1007,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Fuuinjutsu Basico: Precisão"
+1032,0,1010,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Fuuinjutsu Basico: Aura Ninja"
+1033,0,1010,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Fuuinjutsu Basico: Concentracao"
+1034,0,1167,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Fuuinjutsu Basico: Glória"
+1035,0,1591,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Fuuinjutsu Basico: Explodir Chakra"
+
+1041,0,1007,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Genjutsu Basico: Fukai Yasumi"
+1042,0,1591,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Genjutsu Basico: Kokubanjou no Jutsu"
+1043,0,1591,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Genjutsu Basico: Magen: Kasegui no Jutsu"
+1044,0,1167,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Genjutsu Basico: Mahi no Jutsu"
+1045,0,1010,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Genjutsu Basico: Shikumi no Jutsu"
+
+1100,0,1167,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Resistência Basico: Kami no Hogo"
+1101,0,1591,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Resistência Basico: Hogo Suru"
+1102,0,1010,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Resistência Basico: Burokkingu"
+1103,0,1007,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Resistência Basico: Pneuma"
+
+1051,0,1007,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Katon Basico: Housenka no Jutsu"
+1052,0,1591,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Katon Basico: Hana Shuriken no Jutsu"
+1053,0,1167,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Katon Basico: Lança Chamas no Jutsu"
+
+1061,0,1010,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Suiton Basico: Hanhonryuu no Jutsu"
+1062,0,1167,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Suiton Basico: Haran Banshou no Jutsu"
+1063,0,1007,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Suiton Basico: Sensatsu Suishou no Jutsu"
+
+1071,0,1591,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Raiton Basico: Maisou no Jutsu"
+1072,0,1167,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Raiton Basico: Kaminari Oroshi no Jutsu"
+1073,0,1010,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Raiton Basico: Corte Rapido no Jutsu"
+
+1081,0,1010,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Doton Basico: Doryuuheki no Jutsu"
+1082,0,1007,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Doton Basico: Sousou no Jutsu"
+1083,0,1591,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Doton Basico: Doryuusou no Jutsu"
+
+1091,0,1167,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Fuuton Basico: Shinkuuha no Jutsu"
+1092,0,1591,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Fuuton Basico: Daitoppa no Jutsu"
+1093,0,1010,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Fuuton Basico: Shuriken no Jutsu"
+
+// --------------- Sunagakure --------------------------
+
+2001,0,1097,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Taijutsu Basico: Kage Buyo"
+2002,0,1009,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Taijutsu Basico: Jyuuken Ryuu"
+2003,0,1240,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Taijutsu Basico: Rasteira"
+2004,0,1107,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Taijutsu Basico: Shikomishidan"
+2005,0,1240,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Taijutsu Basico: Tokken"
+
+2011,0,1009,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Velocidade Basico: Concentrar chakra nos pés"
+2012,0,1107,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Velocidade Basico: Perícia em Esquiva"
+2013,0,1240,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Velocidade Basico: Rapidez mão"
+2014,0,1097,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Velocidade Basico: Recuar"
+
+2021,0,1240,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Medicina Basico: Chiyute no Jutsu"
+2022,0,1107,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Medicina Basico: Relaxar"
+2023,0,1097,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Medicina Basico: Inyu Shometsu"
+2024,0,1009,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Medicina Basico: Remover Armadilha"
+2025,0,1097,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Medicina Basico: Souzou Saisei"
+
+2031,0,1009,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Fuuinjutsu Basico: Precisão"
+2032,0,1107,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Fuuinjutsu Basico: Aura Ninja"
+2033,0,1097,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Fuuinjutsu Basico: Concentracao"
+2034,0,1240,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Fuuinjutsu Basico: Glória"
+2035,0,1097,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Fuuinjutsu Basico: Explodir Chakra"
+
+2041,0,1107,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Genjutsu Basico: Fukai Yasumi"
+2042,0,1009,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Genjutsu Basico: Kokubanjou no Jutsu"
+2043,0,1097,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Genjutsu Basico: Magen: Kasegui no Jutsu"
+2044,0,1240,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Genjutsu Basico: Mahi no Jutsu"
+2045,0,1240,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Genjutsu Basico: Shikumi no Jutsu"
+
+2100,0,1097,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Resistência Basico: Kami no Hogo"
+2101,0,1240,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Resistência Basico: Hogo Suru"
+2102,0,1107,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Resistência Basico: Burokkingu"
+2103,0,1009,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Resistência Basico: Pneuma"
+
+2051,0,1240,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Katon Basico: Housenka no Jutsu"
+2052,0,1097,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Katon Basico: Hana Shuriken no Jutsu"
+2053,0,1009,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Katon Basico: Lança Chamas no Jutsu"
+
+2061,0,1107,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Suiton Basico: Hanhonryuu no Jutsu"
+2062,0,1009,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Suiton Basico: Haran Banshou no Jutsu"
+2063,0,1240,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Suiton Basico: Sensatsu Suishou no Jutsu"
+
+2071,0,1107,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Raiton Basico: Maisou no Jutsu"
+2072,0,1240,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Raiton Basico: Kaminari Oroshi no Jutsu"
+2073,0,1009,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Raiton Basico: Corte Rapido no Jutsu"
+
+2081,0,1097,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Doton Basico: Doryuuheki no Jutsu"
+2082,0,1009,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Doton Basico: Sousou no Jutsu"
+2083,0,1107,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Doton Basico: Doryuusou no Jutsu"
+
+2091,0,1097,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Fuuton Basico: Shinkuuha no Jutsu"
+2092,0,1240,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Fuuton Basico: Daitoppa no Jutsu"
+2093,0,1107,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Fuuton Basico: Shuriken no Jutsu"
+
+// ------------------ Kirigakure --------------------------
+
+3001,0,1183,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Taijutsu Basico: Kurosukatto"
+3002,0,1860,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Taijutsu Basico: Jyuuken Ryuu"
+3003,0,1012,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Taijutsu Basico: Rasteira"
+3004,0,1052,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Taijutsu Basico: Shikomishidan"
+3005,0,1183,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Taijutsu Basico: Expandir Chakra"
+
+3011,0,1052,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Velocidade Basico: Concentrar chakra nos pés"
+3012,0,1012,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Velocidade Basico: Perícia em Esquiva"
+3013,0,1860,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Velocidade Basico: Rapidez mão"
+3014,0,1860,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Velocidade Basico: Recuar"
+
+3021,0,1183,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Medicina Basico: Chiyute no Jutsu"
+3022,0,1012,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Medicina Basico: Relaxar"
+3023,0,1052,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Medicina Basico: Inyu Shometsu"
+3024,0,1860,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Medicina Basico: Remover Armadilha"
+3025,0,1012,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Medicina Basico: Souzou Saisei"
+
+3031,0,1183,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Fuuinjutsu Basico: Precisão"
+3032,0,1012,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Fuuinjutsu Basico: Aura Ninja"
+3033,0,1052,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Fuuinjutsu Basico: Concentracao"
+3034,0,1052,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Fuuinjutsu Basico: Glória"
+3035,0,1860,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Fuuinjutsu Basico: Explodir Chakra"
+
+3041,0,1183,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Genjutsu Basico: Fukai Yasumi"
+3042,0,1012,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Genjutsu Basico: Kokubanjou no Jutsu"
+3043,0,1860,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Genjutsu Basico: Magen: Kasegui no Jutsu"
+3044,0,1183,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Genjutsu Basico: Mahi no Jutsu"
+3045,0,1052,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Genjutsu Basico: Shikumi no Jutsu"
+
+3100,0,1052,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Resistência Basico: Kami no Hogo"
+3101,0,1183,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Resistência Basico: Hogo Suru"
+3102,0,1012,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Resistência Basico: Burokkingu"
+3103,0,1860,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Resistência Basico: Pneuma"
+
+3051,0,1052,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Katon Basico: Housenka no Jutsu"
+3052,0,1183,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Katon Basico: Hana Shuriken no Jutsu"
+3053,0,1183,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Katon Basico: Lança Chamas no Jutsu"
+
+3061,0,1860,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Suiton Basico: Hanhonryuu no Jutsu"
+3062,0,1012,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Suiton Basico: Haran Banshou no Jutsu"
+3063,0,1183,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Suiton Basico: Sensatsu Suishou no Jutsu"
+
+3071,0,1052,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Raiton Basico: Maisou no Jutsu"
+3072,0,1183,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Raiton Basico: Kaminari Oroshi no Jutsu"
+3073,0,1012,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Raiton Basico: Corte Rapido no Jutsu"
+
+3081,0,1860,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Doton Basico: Doryuuheki no Jutsu"
+3082,0,1012,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Doton Basico: Sousou no Jutsu"
+3083,0,1052,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Doton Basico: Doryuusou no Jutsu"
+
+3091,0,1052,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Fuuton Basico: Shinkuuha no Jutsu"
+3092,0,1183,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Fuuton Basico: Daitoppa no Jutsu"
+3093,0,1012,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Fuuton Basico: Shuriken no Jutsu"
+
+// ------------------ Kumogakure --------------------------
+
+4001,0,1619,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Taijutsu Basico: Kage Buyo"
+4002,0,1145,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Taijutsu Basico: Jyuuken Ryuu"
+4003,0,1103,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Taijutsu Basico: Rasteira"
+4004,0,1128,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Taijutsu Basico: Shikomishidan"
+4005,0,1128,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Taijutsu Basico: Tokken"
+
+4011,0,1145,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Velocidade Basico: Concentrar chakra nos pés"
+4012,0,1103,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Velocidade Basico: Perícia em Esquiva"
+4013,0,1619,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Velocidade Basico: Rapidez mão"
+4014,0,1128,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Velocidade Basico: Recuar"
+
+4021,0,1103,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Medicina Basico: Chiyute no Jutsu"
+4022,0,1619,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Medicina Basico: Relaxar"
+4023,0,1145,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Medicina Basico: Inyu Shometsu"
+4024,0,1128,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Medicina Basico: Remover Armadilha"
+4025,0,1103,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Medicina Basico: Souzou Saisei"
+
+4031,0,1145,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Fuuinjutsu Basico: Precisão"
+4032,0,1128,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Fuuinjutsu Basico: Aura Ninja"
+4033,0,1619,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Fuuinjutsu Basico: Concentracao"
+4034,0,1619,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Fuuinjutsu Basico: Glória"
+4035,0,1103,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Fuuinjutsu Basico: Explodir Chakra"
+
+4041,0,1145,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Genjutsu Basico: Fukai Yasumi"
+4042,0,1103,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Genjutsu Basico: Kokubanjou no Jutsu"
+4043,0,1128,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Genjutsu Basico: Magen: Kasegui no Jutsu"
+4044,0,1128,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Genjutsu Basico: Mahi no Jutsu"
+4045,0,1619,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Genjutsu Basico: Shikumi no Jutsu"
+
+4100,0,1145,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Resistência Basico: Kami no Hogo"
+4101,0,1619,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Resistência Basico: Hogo Suru"
+4102,0,1103,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Resistência Basico: Burokkingu"
+4103,0,1128,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Resistência Basico: Pneuma"
+
+4051,0,1145,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Katon Basico: Housenka no Jutsu"
+4052,0,1619,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Katon Basico: Hana Shuriken no Jutsu"
+4053,0,1103,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Katon Basico: Lança Chamas no Jutsu"
+
+4061,0,1103,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Suiton Basico: Hanhonryuu no Jutsu"
+4062,0,1145,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Suiton Basico: Haran Banshou no Jutsu"
+4063,0,1619,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Suiton Basico: Sensatsu Suishou no Jutsu"
+
+4071,0,1619,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Raiton Basico: Maisou no Jutsu"
+4072,0,1128,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Raiton Basico: Kaminari Oroshi no Jutsu"
+4073,0,1145,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Raiton Basico: Corte Rapido no Jutsu"
+
+4081,0,1128,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Doton Basico: Doryuuheki no Jutsu"
+4082,0,1619,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Doton Basico: Sousou no Jutsu"
+4083,0,1103,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Doton Basico: Doryuusou no Jutsu"
+
+4091,0,1145,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Fuuton Basico: Shinkuuha no Jutsu"
+4092,0,1619,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Fuuton Basico: Daitoppa no Jutsu"
+4093,0,1103,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Fuuton Basico: Shuriken no Jutsu"
+
+
+// ------------------ Skills Inter --------------------------
+
+5000,0,1271,30,0,0,0,0,0,0,0,0,0,0,0,0,0,"Taijutsu Intermediário: Ataque Surpresa"
+5001,0,1256,30,0,0,0,0,0,0,0,0,0,0,0,0,0,"Taijutsu Intermediário: Hakkeshou Gutten"
+5002,0,1995,30,0,0,0,0,0,0,0,0,0,0,0,0,0,"Taijutsu Intermediário: Dai Senkou"
+5003,0,1056,30,0,0,0,0,0,0,0,0,0,0,0,0,0,"Taijutsu Intermediário: Shoufuu Rendan"
+5004,0,1687,30,0,0,0,0,0,0,0,0,0,0,0,0,0,"Taijutsu Intermediário: Konoha Dai Senpuu"
+5005,0,1410,30,0,0,0,0,0,0,0,0,0,0,0,0,0,"Taijutsu Intermediário: Konoha Shoufuu"
+5006,0,1024,30,0,0,0,0,0,0,0,0,0,0,0,0,0,"Taijutsu Intermediário: Tsutenkyaku"
+5007,0,1621,30,0,0,0,0,0,0,0,0,0,0,0,0,0,"Taijutsu Intermediário: Rasengan"
+5008,0,1408,30,0,0,0,0,0,0,0,0,0,0,0,0,0,"Taijutsu Intermediário: Dinami Entry"
+5009,0,1408,30,0,0,0,0,0,0,0,0,0,0,0,0,0,"Taijutsu Intermediário: Tsuki no Kaiten"
+
+5010,0,1174,30,0,0,0,0,0,0,0,0,0,0,0,0,0,"Fuuinjutsu Intermediário: Benção"
+5011,0,1276,30,0,0,0,0,0,0,0,0,0,0,0,0,0,"Fuuinjutsu Intermediário: Espirito Ninja"
+5012,0,1015,30,0,0,0,0,0,0,0,0,0,0,0,0,0,"Fuuinjutsu Intermediário: Fuuka Houin"
+5013,0,1279,30,0,0,0,0,0,0,0,0,0,0,0,0,0,"Fuuinjutsu Intermediário: Pericia Ninja"
+5014,0,1275,30,0,0,0,0,0,0,0,0,0,0,0,0,0,"Fuuinjutsu Intermediário: Kanchi Taipu"
+5015,0,1275,30,0,0,0,0,0,0,0,0,0,0,0,0,0,"Fuuinjutsu Intermediário: Regen no Jutsu"
+
+5020,0,1995,30,0,0,0,0,0,0,0,0,0,0,0,0,0,"Medicina Intermediário: Chikatsu no Jutsu"
+5021,0,1030,30,0,0,0,0,0,0,0,0,0,0,0,0,0,"Medicina Intermediário: Lauda Agnus"
+5022,0,1015,30,0,0,0,0,0,0,0,0,0,0,0,0,0,"Medicina Intermediário: Lauda Ramus"
+5023,0,1174,30,0,0,0,0,0,0,0,0,0,0,0,0,0,"Medicina Intermediário: Shikon no Jutsu"
+
+5030,0,1119,30,0,0,0,0,0,0,0,0,0,0,0,0,0,"Velocidade Intermediário: Troca de Posição"
+5031,0,1119,30,0,0,0,0,0,0,0,0,0,0,0,0,0,"Velocidade Intermediário: Kaze Shunshin"
+5032,0,1216,30,0,0,0,0,0,0,0,0,0,0,0,0,0,"Velocidade Intermediário: Teleporte"
+5033,0,1243,30,0,0,0,0,0,0,0,0,0,0,0,0,0,"Velocidade Intermediário: Rapto"
+
+5040,0,1232,30,0,0,0,0,0,0,0,0,0,0,0,0,0,"Genjutsu Intermediário: Jigoku Kouka"
+5041,0,1099,30,0,0,0,0,0,0,0,0,0,0,0,0,0,"Genjutsu Intermediário: Kanashibari no Genjutsu"
+5042,0,2073,30,0,0,0,0,0,0,0,0,0,0,0,0,0,"Genjutsu Intermediário: Jigyaku no Chakra"
+5043,0,1303,30,0,0,0,0,0,0,0,0,0,0,0,0,0,"Genjutsu Intermediário: Fukai Kemuri"
+5044,0,1058,30,0,0,0,0,0,0,0,0,0,0,0,0,0,"Genjutsu Intermediário: Kokuangyo no Jutsu"
+5045,0,1139,30,0,0,0,0,0,0,0,0,0,0,0,0,0,"Genjutsu Intermediário: Shinkirou no Genjutsu"
+5046,0,1139,30,0,0,0,0,0,0,0,0,0,0,0,0,0,"Genjutsu Intermediário: Akai Tsukiakari"
+
+5100,0,1174,30,0,0,0,0,0,0,0,0,0,0,0,0,0,"Resistência Intermediário: Hogo Shirudo"
+5101,0,1276,30,0,0,0,0,0,0,0,0,0,0,0,0,0,"Resistência Intermediário: Shokan"
+5102,0,1015,30,0,0,0,0,0,0,0,0,0,0,0,0,0,"Resistência Intermediário: Shinseina Ora"
+5103,0,1279,30,0,0,0,0,0,0,0,0,0,0,0,0,0,"Resistência Intermediário: Honno"
+5104,0,1275,30,0,0,0,0,0,0,0,0,0,0,0,0,0,"Resistência Intermediário: Ishin Mamoru"
+
+5050,0,1303,30,0,0,0,0,0,0,0,0,0,0,0,0,0,"Katon Intermediário: Katon Gougakyuu"
+5051,0,1261,30,0,0,0,0,0,0,0,0,0,0,0,0,0,"Katon Intermediário: Katon Haisekishou"
+5052,0,1118,30,0,0,0,0,0,0,0,0,0,0,0,0,0,"Katon Intermediário: Katon Gouryuuka"
+5053,0,1139,30,0,0,0,0,0,0,0,0,0,0,0,0,0,"Katon Intdermediário: Katon Yasaka no Magatama"
+
+5060,0,1271,30,0,0,0,0,0,0,0,0,0,0,0,0,0,"Suiton Intermediário: Suiton Suiryuudan"
+5061,0,1410,30,0,0,0,0,0,0,0,0,0,0,0,0,0,"Suiton Intermediário: Suiton Mizurappa"
+5062,0,1391,30,0,0,0,0,0,0,0,0,0,0,0,0,0,"Suiton Intermediário: Suiton Suijinheki"
+5063,0,1995,30,0,0,0,0,0,0,0,0,0,0,0,0,0,"Suiton Intermediário: Suiton Pó de Diamante"
+
+5070,0,1615,30,0,0,0,0,0,0,0,0,0,0,0,0,0,"Raiton Intermediário: Raiton Gian"
+5071,0,1507,30,0,0,0,0,0,0,0,0,0,0,0,0,0,"Raiton Intermediário: Raiton Jibashiri"
+5072,0,1253,30,0,0,0,0,0,0,0,0,0,0,0,0,0,"Raiton Intermediário: Raiton Chidori"
+5073,0,1151,30,0,0,0,0,0,0,0,0,0,0,0,0,0,"Raiton Intermediário: Raiton Adoramus"
+5074,0,1151,30,0,0,0,0,0,0,0,0,0,0,0,0,0,"Raiton Intermediário: Raiton Kaminariyari"
+
+5080,0,1559,30,0,0,0,0,0,0,0,0,0,0,0,0,0,"Doton Intermediário: Doton Raishin"
+5081,0,1308,30,0,0,0,0,0,0,0,0,0,0,0,0,0,"Doton Intermediário: Doton Stone Rain"
+5082,0,1127,30,0,0,0,0,0,0,0,0,0,0,0,0,0,"Doton Intermediário: Doton Kyuu"
+5083,0,1692,30,0,0,0,0,0,0,0,0,0,0,0,0,0,"Doton Intermediário: Doton Castigo de Nerthus"
+
+5090,0,1127,30,0,0,0,0,0,0,0,0,0,0,0,0,0,"Fuuton Intermediário: Fuuton Kamaitachi"
+5091,0,1119,30,0,0,0,0,0,0,0,0,0,0,0,0,0,"Fuuton Intermediário: Fuuton Renkuudan"
+5092,0,1055,30,0,0,0,0,0,0,0,0,0,0,0,0,0,"Fuuton Intermediário: Fuuton Nindou"
+5093,0,1055,30,0,0,0,0,0,0,0,0,0,0,0,0,0,"Fuuton Intermediário: Fuuton Tatsu no Oshigoto"
+5094,0,1692,30,0,0,0,0,0,0,0,0,0,0,0,0,0,"Fuuton Intermediário: Fuuton Sonic Wave"
+
+// ------------------ Skills Avan --------------------------
+
+6000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Taijutsu Avançado: Chakra Hoshutsu"
+6001,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Taijutsu Avançado: Daichiwari"
+6002,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Taijutsu Avançado: Kurosukatto"
+6003,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Taijutsu Avançado: Konoha Renpuu"
+6004,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Taijutsu Avançado: Chobatsu no Ha"
+6005,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Taijutsu Avançado: Shobatsu"
+6006,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Taijutsu Avançado: Chakura Bakuhatsu"
+
+6010,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Fuuinjutsu Avançado: Shiki Fujin"
+6011,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Fuuinjutsu Avançado: Gaia Fuuin"
+6012,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Fuuinjutsu Avançado: Enfraquecer Oponente"
+6013,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Fuuinjutsu Avançado: Kaupe"
+6014,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Fuuinjutsu Avançado: Proteger Terreno"
+
+6020,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Medicina Avançado: Santuario"
+6021,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Medicina Avançado: Sopro Divino"
+6022,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Medicina Avançado: Jinsei o kyoyu Suru"
+6023,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Medicina Avançado: Iyasu"
+6024,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Medicina Avançado: Saigo no Hitokuchi"
+6025,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Medicina Avançado: Netsu Chikei"
+
+6030,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Velocidade Avançado: Mizu Corte"
+6031,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Velocidade Avançado: Forma Etera"
+6032,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Velocidade Avançado: Hiraishin"
+6033,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Velocidade Avançado: Salto Relampago"
+6034,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Velocidade Avançado: Dai Shunshin"
+
+6040,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Genjutsu Avançado: Bakuhatsu Kemuri"
+6041,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Genjutsu Avançado: Yubi no Gen"
+6042,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Genjutsu Avançado: Miro no Gen"
+6043,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Genjutsu Avançado: Konohi Kemuri"
+6044,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Genjutsu Avançado: Neru no Gen"
+
+6100,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Resistência Avançado: Yosai"
+6101,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Resistência Avançado: Shojun no Hiji"
+6102,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Resistência Avançado: Bogyoryoku"
+6103,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Resistência Avançado: Hofuku"
+6104,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Resistência Avançado: Joka Suru"
+6105,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Resistência Avançado: Sukeru"
+
+6050,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Katon Avançado: Katon Zukokku"
+6051,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Katon Avançado: Katon Kasume Enbu"
+6052,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Katon Avançado: Katon Meteoro Escarlate"
+
+6060,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Suiton Avançado: Suiton Suishouha"
+6061,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Suiton Avançado: Suiton Goshokuzame"
+6062,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Suiton Avançado: Suiton Zero Absoluto"
+
+6070,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Raiton Avançado: Raiton Schichuu Shibari"
+6071,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Raiton Avançado: Raiton Corrente Eletrica"
+6072,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Raiton Avançado: Raiton Chidori Nagashi"
+
+6080,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Doton Avançado: Doton Gandan Kyuu"
+6081,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Doton Avançado: Doton Abalo Sismico"
+6082,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Doton Avançado: Doton Terremoto"
+
+6090,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Fuuton Avançado: Fuuton Atsugai"
+6091,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Fuuton Avançado: Fuuton Mugen Sajin Daitoppa"
+6092,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Fuuton Avançado: Fuuton Vento Cortante"
+
+// ------------------ Missão Rank E --------------------------
+
+10000,0,1080,10,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank E: Limpar Vila"
+10001,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank E: Recolher Arquivos"
+10002,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank E: Achar Gato Tora"
+10003,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank E: Tosar Ovelhas"
+10004,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank E: Alimentar Bois"
+
+// ------------------ Missão Rank D --------------------------
+
+11000,0,1139,40,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: D"
+11001,0,1261,40,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: D"
+11002,0,1303,40,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: D"
+11003,0,2073,40,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: D"
+
+11004,0,1058,40,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: D"
+11005,0,1369,40,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: D"
+11006,0,1127,40,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: D"
+11007,0,1794,40,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: D"
+
+11008,0,1408,40,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: D"
+11009,0,1271,40,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: D"
+11010,0,1391,40,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: D"
+11011,0,1279,40,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: D"
+
+11012,0,1507,40,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: D"
+11013,0,1151,40,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: D"
+11014,0,1620,40,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: D"
+11015,0,1253,40,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: D"
+//Novos
+11028,0,1018,40,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: D"
+11029,0,1174,40,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: D"
+11030,0,1559,40,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: D"
+11031,0,1114,40,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: D"
+11032,0,1413,40,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: D"
+11033,0,1372,40,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: D"
+11034,0,1516,40,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: D"
+11035,0,1614,40,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: D"
+11036,0,1308,40,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: D"
+11037,0,1656,40,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: D"
+11038,0,1030,40,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: D"
+11039,0,1119,40,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: D"
+11040,0,1019,40,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: D"
+
+//Itens
+11016,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: D"
+11017,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: D"
+11018,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: D"
+11019,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: D"
+11020,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: D"
+11021,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: D"
+11022,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: D"
+//Novos
+11023,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: D"
+11024,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: D"
+11025,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: D"
+11026,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: D"
+11027,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: D"
+
+// ------------------ Missão Rank C --------------------------
+
+12000,0,1216,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: C"
+12001,0,1603,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: C"
+12002,0,1232,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: C"
+12003,0,1387,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: C"
+
+12004,0,1692,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: C"
+12005,0,1106,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: C"
+12006,0,1256,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: C"
+12007,0,1055,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: C"
+
+12008,0,1995,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: C"
+12009,0,1880,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: C"
+12010,0,1275,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: C"
+12011,0,1276,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: C"
+
+12012,0,1016,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: C"
+12013,0,1621,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: C"
+12014,0,1615,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: C"
+12015,0,1263,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: C"
+//Novos
+12022,0,1263,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: C"
+12023,0,1263,50,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: C"
+
+//Itens
+12016,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: C"
+12017,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: C"
+12018,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: C"
+12019,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: C"
+12020,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: C"
+12021,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: C"
+
+// ------------------ Missão Rank B --------------------------
+
+13000,0,1866,60,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: B"
+13001,0,1014,60,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: B"
+13002,0,1499,60,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: B"
+13003,0,1498,60,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: B"
+
+13004,0,1715,60,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: B"
+13005,0,1165,60,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: B"
+13006,0,1378,60,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: B"
+13007,0,1110,60,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: B"
+
+13008,0,1317,60,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: B"
+13009,0,2024,60,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: B"
+13010,0,1020,60,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: B"
+13011,0,1020,60,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: B"
+
+13012,0,1278,60,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: B"
+13013,0,1149,60,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: B"
+13014,0,1412,60,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: B"
+13015,0,1412,60,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: B"
+
+//Itens
+13016,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: B"
+13017,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: B"
+13018,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: B"
+13019,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: B"
+13020,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: B"
+
+// ------------------ Missão Rank A --------------------------
+
+14000,0,1497,70,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: A"
+14001,0,1042,70,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: A"
+14002,0,1022,70,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: A"
+14003,0,1022,70,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: A"
+
+14004,0,1035,70,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: A"
+14005,0,1040,70,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: A"
+14006,0,1376,70,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: A"
+14007,0,1376,70,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: A"
+
+14008,0,1406,70,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: A"
+14009,0,1506,70,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: A"
+14010,0,1255,70,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: A"
+14011,0,1148,70,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: A"
+
+14012,0,1386,70,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: A"
+14013,0,1199,70,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: A"
+14014,0,1091,70,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: A"
+14015,0,1718,70,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: A"
+
+14016,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: A"
+14017,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: A"
+14018,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: A"
+14019,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: A"
+
+// ------------------ Missão Rank S --------------------------
+
+15000,0,1634,80,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: S"
+15001,0,1839,80,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: S"
+15002,0,1401,80,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: S"
+15003,0,1635,80,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: S"
+15004,0,1996,80,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: S"
+15005,0,1997,80,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: S"
+15006,0,1998,80,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: S"
+15007,0,1999,80,0,0,0,0,0,0,0,0,0,0,0,0,0,"Missão Rank: S"
+
+// ------------------ Quest Habilidade Hiden --------------------------
+40000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Liberando Mangekyou"
+40001,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Liberando Byakugan"
+40002,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Controle Total de Marionete"
+40003,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Liberação dos Pontos de Chakra"
+40004,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Expansão Máxima"
+40005,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Controle das Sombras"
+40006,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Liberação de Selo Extremo do Céu"
+40007,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Liberação de Selo Extremo da Terra"
+40008,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Controle Total do Gelo"
+40009,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Contro das Armas"
+40010,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Aperfeiçoar Argilas"
+40011,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Aperfeiçoar Insetos"
+40012,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Canção Demoniaca"
+40013,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Veneno Mortal"
+40014,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Byakugo no In Supremo"
+40015,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Aperfeiçoamento dos Ossos"
+40016,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Aperfeiçoamento do Shakuton"
+40017,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Aperfeiçoamento do Jinton"
+40018,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Ritual Jashin"
+40019,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Controle Ressonante"
+40020,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Aperfeiçoamento com Arco"
+40021,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Manipulação Raiton"
+40022,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Liberação de Selo Extremo Senjutsu"
+40023,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Aperfeiçoamento em Selamentos"
+40024,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Aperfeiçoamento Clã Hozuki"
+40025,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Mestre Kenjutsu"
+40026,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Mestre dos Cristais"
+40027,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Alteração de Natureza: Lava"
+40028,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"O talento perfeito"
+40029,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Herdeiro Senju"
+40030,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Mestre das Armas"
+40031,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Sintonia com a Natureza"
+40032,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"A liberação total Ying Yang"
+
+// ------------------ Kuchiyse Nivel 1 --------------------------
+50000,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Kuchyose Sapo [1/2]"
+50001,0,1034,100,0,0,0,0,0,0,0,0,0,0,0,0,0,"Kuchyose Sapo [2/2]"
+
+50002,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Kuchyose Lesma [1/2]"
+50003,0,1783,100,0,0,0,0,0,0,0,0,0,0,0,0,0,"Kuchyose Lesma [2/2]"
+
+50004,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Kuchyose Cobra [1/2]"
+50005,0,1037,100,0,0,0,0,0,0,0,0,0,0,0,0,0,"Kuchyose Cobra [2/2]"
+
+50006,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Kuchyose Macaco [1/2]"
+50007,0,1214,100,0,0,0,0,0,0,0,0,0,0,0,0,0,"Kuchyose Macaco [2/2]"
+
+50008,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Kuchyose Cachorro [1/2]"
+50009,0,1212,100,0,0,0,0,0,0,0,0,0,0,0,0,0,"Kuchyose Cachorro [2/2]"
+
+50010,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Kuchyose Tartaruga [1/2]"
+50011,0,1006,100,0,0,0,0,0,0,0,0,0,0,0,0,0,"Kuchyose Tartaruga [2/2]"
+
+50012,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Kuchyose Aranha [1/2]"
+50013,0,1017,100,0,0,0,0,0,0,0,0,0,0,0,0,0,"Kuchyose Aranha [2/2]"
+
+// ------------------ Kuchiyse Nivel 2 --------------------------
+50100,0,1402,100,0,0,0,0,0,0,0,0,0,0,0,0,0,"Kuchyose Sapo Nível 2"
+
+50101,0,1031,100,0,0,0,0,0,0,0,0,0,0,0,0,0,"Kuchyose Lesma Nível 2"
+
+50102,0,1025,100,0,0,0,0,0,0,0,0,0,0,0,0,0,"Kuchyose Cobra Nível 2"
+
+50103,0,1628,100,0,0,0,0,0,0,0,0,0,0,0,0,0,"Kuchyose Macaco Nível 2"
+
+50104,0,1296,100,0,0,0,0,0,0,0,0,0,0,0,0,0,"Kuchyose Cachorro Nível 2"
+
+50105,0,1021,100,0,0,0,0,0,0,0,0,0,0,0,0,0,"Kuchyose Tartaruga Nível 2"
+
+50106,0,1023,100,0,0,0,0,0,0,0,0,0,0,0,0,0,"Kuchyose Aranha Nível 2"
+
+// ------------------ Kuchiyse Nivel 3 --------------------------
+50200,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Kuchyose Sapo Nível 3 [1/2]"
+50201,0,1089,100,0,0,0,0,0,0,0,0,0,0,0,0,0,"Kuchyose Sapo Nível 3 [2/2]"
+
+50202,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Kuchyose Lesma Nível 3 [1/2]"
+50203,0,1381,100,0,0,0,0,0,0,0,0,0,0,0,0,0,"Kuchyose Lesma Nível 3 [2/2]"
+
+50204,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Kuchyose Cobra Nível 3 [1/2]"
+50205,0,1418,100,0,0,0,0,0,0,0,0,0,0,0,0,0,"Kuchyose Cobra Nível 3 [2/2]"
+
+50206,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Kuchyose Macaco Nível 3 [1/2]"
+50207,0,1057,100,0,0,0,0,0,0,0,0,0,0,0,0,0,"Kuchyose Macaco Nível 3 [2/2]"
+
+50208,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Kuchyose Cachorro Nível 3 [1/2]"
+50209,0,1032,100,0,0,0,0,0,0,0,0,0,0,0,0,0,"Kuchyose Cachorro Nível 3 [2/2]"
+
+50210,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Kuchyose Tartaruga Nível 3 [1/2]"
+50211,0,1026,100,0,0,0,0,0,0,0,0,0,0,0,0,0,"Kuchyose Tartaruga Nível 3 [2/2]"
+
+50212,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,"Kuchyose Aranha Nível 3 [1/2]"
+50213,0,1027,100,0,0,0,0,0,0,0,0,0,0,0,0,0,"Kuchyose Aranha Nível 3 [2/2]"
+
+99999,0,1027,100,0,0,0,0,0,0,0,0,0,0,0,0,0,"Teste"
